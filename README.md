@@ -92,23 +92,6 @@ azure-entra-phishing-simulation/
 3. **Real-time Proxying**: Maintains legitimate connection to Microsoft
 4. **MFA Bypass**: Tokens contain MFA validation, bypassing additional checks
 
-## 🛡️ Defense & Mitigation
-
-### Detection Strategies
-- Monitor for suspicious login locations
-- Implement Conditional Access Policies
-- Enable Azure AD Identity Protection
-- Review sign-in logs for anomalies
-- Deploy FIDO2/Passwordless authentication
-
-### Prevention Measures
-- **Conditional Access**: Require compliant devices
-- **Continuous Access Evaluation**: Real-time session validation
-- **Token Protection**: Hardware-based token binding
-- **User Training**: Security awareness programs
-- **Email Security**: DMARC, DKIM, SPF policies
-
-See `defense/` folder for detailed strategies.
 
 ## 📸 Screenshots
 
@@ -137,17 +120,6 @@ See `defense/` folder for detailed strategies.
 ## 🤝 Contributing
 
 Contributions are welcome! Please read the contributing guidelines before submitting pull requests.
-
-## 📝 License
-
-This project is licensed under the MIT License - see LICENSE file for details.
-
-## 👤 Author
-
-**Your Name**
-- LinkedIn: [Your Profile]
-- GitHub: [@YourUsername]
-- Website: [Your Website]
 
 ## 🙏 Acknowledgments
 
