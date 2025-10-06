@@ -27,7 +27,6 @@ Invoke-AADIntReconAsOutsider -DomainName verizon.onmicrosoft.com | Format-Table
 | RPS - https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-relying-party-trust | Relaying parties of STS (AD FS). Requires -GetRelayingParties switch. |
 #>
 
-
 <#
 Check if user exists
 
@@ -44,4 +43,5 @@ Invoke-AADIntUserEnumerationAsOutsider -UserName "", "" -method Login
 
 # Check if users exists from file
 Get-Content .\users.txt | Invoke-AADIntUserEnumerationAsOutsider
+
 
