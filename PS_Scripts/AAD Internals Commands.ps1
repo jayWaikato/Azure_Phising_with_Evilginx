@@ -5,14 +5,13 @@ Install-Module AADInternals
 Import-Module AADInternals
 
 # Get Tenant ID
-Get-AADIntTenantID -Domain cybercheckpentest.onmicrosoft.com
+Get-AADIntTenantID -Domain domain_name
 
 # Get All domains of the tenant
-Get-AADIntTenantDomains -Domain cybercheckpentest.onmicrosoft.com
+Get-AADIntTenantDomains -Domain domain_name
 
 # Get OpenID configuration
-Get-AADIntOpenIDConfiguration -Domain cybercheckpentest.onmicrosoft.com
-
+Get-AADIntOpenIDConfiguration -Domain domain_name
 # Invoke reconnaissance as outsider
 Invoke-AADIntReconAsOutsider -DomainName verizon.onmicrosoft.com | Format-Table
 
@@ -39,10 +38,10 @@ Login 	Tries to log in to Entra ID using oauth2 endpoint
 Autologon 	Tries to log in to Entra ID using autologon endpoint (attempts are not logged)
 RST2 	Tries to log in to Entra ID using RST2 endpoint (attempts are not logged)
 #>
-Invoke-AADIntUserEnumerationAsOutsider -UserName "admin.hrabec@cybercheckpentest.onmicrosoft.com", "pavel.hrabec.@cybercheckpentest.onmicrosoft.com" -method Login
+Invoke-AADIntUserEnumerationAsOutsider -UserName "", "" -method Login
 
-# Move to Directory
-cd 'E:\CyberCheck\Cloud Pentesting\Tools'
+
 
 # Check if users exists from file
 Get-Content .\users.txt | Invoke-AADIntUserEnumerationAsOutsider
+
