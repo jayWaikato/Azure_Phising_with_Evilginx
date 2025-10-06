@@ -10,7 +10,6 @@ Prerequisites:
 If you are facing some problems while authenticating, use 'Connect-AzAccount' before running this script
 #>
 
-
 # Prompt for Subscription ID
 $subscriptionID = Read-Host "Please enter Subscription ID"
 
