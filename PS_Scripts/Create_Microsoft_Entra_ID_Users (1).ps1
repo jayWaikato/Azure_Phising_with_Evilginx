@@ -45,5 +45,4 @@ foreach ($user in $users) {
 }
 
 # Output success message
-Write-Output "Successfully created all the users:"
 Write-Output "Use this password: $password"
