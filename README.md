@@ -37,35 +37,19 @@ Attacker Infrastructure → Evilginx2 Phishing Proxy → Microsoft Entra ID → 
 azure-entra-phishing-simulation/
 ├── README.md
 ├── DISCLAIMER.md
-├── LICENSE
 ├── docs/
 │   ├── setup-guide.md
 │   ├── attack-flow.md
-│   ├── mitigation-strategies.md
 │   └── screenshots/
 │       ├── evilginx-dashboard.png
 │       ├── token-capture.png
 │       └── successful-bypass.png
-├── scripts/
+├── PS_Scripts/
 │   ├── azure-setup/
 │   │   ├── Create_Microsoft_Entra_ID_Users.ps1
-│   │   └── README.md
 │   └── reconnaissance/
 │       ├── AADInternals_Commands.ps1
-│       ├── users.txt
-│       └── README.md
-├── evilginx/
-│   ├── setup-instructions.md
-│   ├── phishlet-config/
-│   └── lure-generation.md
-├── phishing-templates/
-│   ├── email-templates/
-│   │   └── password-reset-email.md
-│   └── best-practices.md
-└── defense/
-    ├── detection-rules.md
-    ├── prevention-strategies.md
-    └── incident-response.md
+
 ```
 
 ## 🚀 Quick Start
